@@ -1,5 +1,6 @@
 Bh3site::Application.routes.draw do
 
+  devise_for :users
   get "more/index"
   root "static#welcome"
 

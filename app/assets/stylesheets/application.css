@@ -38,3 +38,15 @@ pre {
 	font-family: sans-serif;
 	padding-left: 7px;
 }
+
+.pad20 {
+	padding: 20px;
+}
+
+.alert{
+	color: #D00000;
+}
+
+.notice {
+	color: #009900;
+}

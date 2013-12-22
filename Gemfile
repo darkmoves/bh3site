@@ -42,6 +42,7 @@ end
 
 gem 'nokogiri'
 gem "geocoder"
+gem "devise"
 
 
 # Use ActiveModel has_secure_password

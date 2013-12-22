@@ -20,18 +20,23 @@
 			<li class="<%= "pure-menu-selected" if params[:controller] == "posts" %>"><a href="/posts">Hash Trash</a></li>
             <li class="<%= "pure-menu-selected" if params[:controller] == "more" %>"><a href="/more">More info</a></li>
         </ul>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
     </div>
   <div class="content">
 	    <div class="header">
-
 	    </div>
-	    
 	    <%= yield :splash %>
-	
 		<div class="content">
+		  <% if params[:controller].match(/^devise/) then %>
+		  <div class="pad20">
+				<%= yield %>
+		  </div>
+	      <% else %>
 		  <div class="pure-g-r"> 
 		 		<%= yield %>
 		  </div>
+		  <% end %>
 		</div>
 
 	    <div class="footer">
