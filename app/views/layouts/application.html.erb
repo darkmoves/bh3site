@@ -20,8 +20,11 @@
 			<li class="<%= "pure-menu-selected" if params[:controller] == "posts" %>"><a href="/posts">Hash Trash</a></li>
             <li class="<%= "pure-menu-selected" if params[:controller] == "more" %>"><a href="/more">More info</a></li>
         </ul>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+	   <%= render "partials/user_widget" %>
+		<div id="notifications">
+			<span class="notice"><%= notice %></span>
+	    	<span class="alert"><%= alert %></span>
+		</div>
     </div>
   <div class="content">
 	    <div class="header">
