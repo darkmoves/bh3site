@@ -1,0 +1,5 @@
+<h3 class="content-subhead">Haberdashery</h3>
+
+<% @items.each do |item| %>
+  <h3><%= link_to "#{item.name}", "haberdashery/#{item.id}" %></h3>
+<% end %>
